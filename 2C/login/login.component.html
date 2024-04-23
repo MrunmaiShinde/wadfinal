@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="cart">
+        <h1>Login Form</h1>
+        <form #mylogin="ngForm" (ngSubmit)="doLogin(mylogin.value)">
+            
+              <p>
+                <mat-form-field appearance="outline" class="field">
+                  <mat-label>Email</mat-label>
+                  <input type="text" name="Email" [(ngModel)]="data.email" matInput placeholder="Enter Email">
+                  </mat-form-field>
+              </p>
+              
+
+              
+              <p>
+                <mat-form-field appearance="outline" class="field">
+                  <mat-label>Password</mat-label>
+                  <input type="password" name="Password" [(ngModel)]="data.password" matInput placeholder="Enter Password">
+                  </mat-form-field>
+              </p>
+              <div class="send">
+                <button type="submit" mat-raised-button color="primary">Login</button>
+                <button type="reset" mat-raised-button color="accent">Reset</button>
+              </div>
+        </form>
+    </div>
+
+</div>
